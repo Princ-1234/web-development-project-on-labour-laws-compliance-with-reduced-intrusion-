@@ -1,0 +1,104 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.3s ease;
+  background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85'); /* Add your image URL here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+  background-image: url('your-dark-background-image-url.jpg'); /* Dark mode background */
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgba(44, 62, 80, 0.9); /* Slight transparency for a cleaner look */
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.hidden {
+  display: none;
+}
+
+.content-section:not(.hidden) {
+  display: block;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
